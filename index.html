@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika Patel | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== SPLASH / INTRO SCREEN ===== -->
+    <div id="splashScreen">
+        <div id="splashHello"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="top">
+        <a href="#top" class="logo">© monikapatel</a>
+        <nav class="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#projects">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+
+        <!-- Particle canvas -->
+        <canvas id="particleCanvas"></canvas>
+
+        <div class="hero-inner">
+
+            <!-- Hello in different languages -->
+            <div class="hello-line">
+                <span id="helloText">Hello</span>
+            </div>
+
+            <h1 class="hero-heading">
+                <span class="glitch-text" id="firstName">MONIKA</span><br>
+                <span class="glitch-text glitch-dim" id="lastName">PATEL.</span>
+            </h1>
+
+            <p class="hero-sub">
+                Open to internship &amp; project opportunities worldwide.
+                Passionate about building clean, intuitive, and thoughtful
+                digital experiences that leave a mark.
+            </p>
+
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                OPEN TO WORK WORLDWIDE
+            </div>
+
+            <div class="hero-cta">
+                <a href="#projects" class="cta-orange">PROJECTS</a>
+                <a href="#contact" class="cta-outline">CONTACT</a>
+                <a href="#" class="cta-outline">RESUME</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <div class="about-label">WHO AM I</div>
+        <h2 class="about-big-title">WHO AM I</h2>
+        <p class="about-summary">I'm Monika Patel, a Computer Science & Engineering student and aspiring Software Developer specializing in Web Development and Data Structures & Algorithms (DSA).</p>
+
+        <div class="about-grid">
+
+            <!-- Left: Video -->
+            <div class="about-video-wrap">
+                <video autoplay muted loop playsinline class="about-video">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+
+            <!-- Right: Scroll-fade paragraphs -->
+            <div class="about-right">
+                <span class="about-tag">(ABOUT ME)</span>
+
+                <div class="fade-lines">
+                    <p class="fade-line">I'm Monika Patel, a Computer Science &amp; Engineering student and aspiring Software Developer specializing in Web Development and Data Structures &amp; Algorithms (DSA).</p>
+
+                    <p class="fade-line">I build functional, user-friendly web applications using C++, Python, JavaScript, React.js, Node.js, Express.js, MongoDB, and SQL — with experience across both frontend and backend development.</p>
+
+                    <p class="fade-line">My interest in software development started with curiosity about how applications work, and has grown into hands-on experience through projects, internships, and continuous coding practice. I'm actively seeking opportunities to apply my skills, grow as a developer, and build software that solves real-world problems.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+        <div class="services-label">WHAT I DO</div>
+        <p class="services-intro">
+           Strong foundation in Data Structures & Algorithms (DSA) with a focus on problem-solving, algorithm design, and writing efficient, optimized code. Proficient in C++ and Python for competitive programming and technical problem-solving. Additionally skilled in web development using JavaScript, React.js, Node.js, and MongoDB. Continuously strengthening coding skills, logical thinking, and software development knowledge through consistent practice and hands-on projects.    
+        </p>
+        <span class="services-tag">(SERVICES)</span>
+
+        <div class="accordion">
+             <div class="accordion-item">
+                <button class="accordion-header">
+                    <span class="acc-title">Problem Solving &amp; DSA</span>
+                    <span class="acc-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                    <p>Strong foundation in Data Structures &amp; Algorithms with proficiency in C++ and Python, developed through consistent hands-on practice. Practical experience with Arrays, Strings, Linked Lists, Stacks, and Queues, along with time and space complexity analysis to write optimized solutions. Committed to strengthening core CS fundamentals and algorithmic thinking with an emphasis on clean, efficient, and readable code.</p>
+                    <ul>
+                        <li><span>01</span>Data Structures — Arrays, Strings, Linked Lists, Stacks, Queues</li>
+                        <li><span>02</span>Time &amp; Space Complexity Analysis</li>
+                        <li><span>03</span>C++ &amp; Python Problem Solving</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span class="acc-title">Full Stack Development</span>
+                    <span class="acc-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                    <p>End-to-end development of modern web applications, covering everything from frontend interfaces to backend APIs. I build complete, maintainable, and scalable systems using the MERN stack and modern tooling.</p>
+                    <ul>
+                        <li><span>01</span>MERN Stack (MongoDB, Express.js, React, Node.js)</li>
+                        <li><span>02</span>REST APIs &amp; Integration</li>
+                        <li><span>03</span>Authentication &amp; Authorization</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span class="acc-title">Frontend Development</span>
+                    <span class="acc-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                    <p>Crafting responsive, accessible, and elegant interfaces that deliver exceptional user experiences. I focus on clarity, performance, and seamless interaction across devices.</p>
+                    <ul>
+                        <li><span>01</span>React.js, HTML5, CSS3, JavaScript</li>
+                        <li><span>02</span>Responsive Design &amp; Animations</li>
+                        <li><span>03</span>Figma to Code Implementation</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="stack-section" id="skills">
+        <div class="stack-label">MY TECH STACK</div>
+        <h2 class="stack-big-title">MY TECH STACK</h2>
+        <p class="stack-intro">A selection of technologies I use to design, build, and deploy web applications.</p>
+
+        <div class="stack-row">
+            <h3 class="stack-cat">FRONTEND</h3>
+            <div class="stack-items">
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stack-row">
+            <h3 class="stack-cat">BACKEND</h3>
+            <div class="stack-items">
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="invert-icon">
+                    <span>Express.js</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stack-row">
+            <h3 class="stack-cat">DATABASE</h3>
+            <div class="stack-items">
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                    <span>MongoDB</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stack-row">
+            <h3 class="stack-cat">TOOLS</h3>
+            <div class="stack-items">
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                    <span>C++</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="stack-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="invert-icon">
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+        <div class="projects-label">PROJECTS</div>
+        <h2 class="projects-big-title">PROJECTS</h2>
+
+        <div class="project-list">
+
+            <a href="https://dineconnect-4yss.vercel.app/login" class="project-row" target="_blank"
+               data-preview="https://dineconnect-4yss.vercel.app/login">
+                <div class="proj-left">
+                    <div class="proj-num">01</div>
+                    <span class="proj-arrow">→</span>
+                </div>
+                <div class="proj-main">
+                    <p class="proj-title-sm">DINECONNECT &nbsp;·&nbsp; MERN STACK · QR ORDERING</p>
+                    <h3>DineConnect</h3>
+                    <p class="proj-desc">A full-stack restaurant management platform built with the MERN stack that digitizes dine-in ordering through QR-code-based menus, live order tracking, and integrated payments. Supports two roles — customers &amp; restaurant owners — with dedicated auth and role-based access. Customers scan a QR code to browse the live menu, place orders, and track status in real time (Placed → Preparing → Completed), then pay directly through the app. Owners get an admin panel to manage menu items and update order statuses with real-time notifications.</p>
+                    <div class="proj-tags">
+                        <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
+                    </div>
+                </div>
+                <span class="proj-cta">VIEW PROJECT →</span>
+            </a>
+
+            <a href="https://monikapatel-s.github.io/fitness-hub/" class="project-row" target="_blank"
+               data-preview="https://monikapatel-s.github.io/fitness-hub/">
+                <div class="proj-left">
+                    <div class="proj-num">02</div>
+                    <span class="proj-arrow">→</span>
+                </div>
+                <div class="proj-main">
+                    <p class="proj-title-sm">FITNESS HUB &nbsp;·&nbsp; WEB APP</p>
+                    <h3>Fitness Hub</h3>
+                    <p class="proj-desc">A responsive, multi-section gym landing page with Home, About, Services, Trainers, Membership Plans, Gallery, Testimonials &amp; Contact. Features an interactive BMI Calculator with dynamic health category display, review submission form, contact form with client-side validation, smooth-scroll navigation, and a fully responsive layout using CSS Flexbox/Grid. Deployed on GitHub Pages.</p>
+                    <div class="proj-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <span class="proj-cta">VIEW PROJECT →</span>
+            </a>
+
+            <a href="#" class="project-row" target="_blank">
+                <div class="proj-left">
+                    <div class="proj-num">03</div>
+                    <span class="proj-arrow">→</span>
+                </div>
+                <div class="proj-main">
+                    <p class="proj-title-sm">TOURIST SAFETY &nbsp;·&nbsp; HACKATHON</p>
+                    <h3>Smart Tourist Safety</h3>
+                    <p class="proj-desc">A Smart India Hackathon solution focused on improving tourist safety through real-time location monitoring, emergency alerts, and IoT-based safety support for travelers in unfamiliar areas.</p>
+                    <div class="proj-tags">
+                        <span>Web Technology</span><span>IoT</span><span>Problem Solving</span>
+                    </div>
+                </div>
+                <span class="proj-cta">VIEW PROJECT →</span>
+            </a>
+
+        </div>
+
+        <!-- Hover preview card -->
+        <div class="proj-preview-card" id="previewCard">
+            <iframe id="previewFrame" src="" loading="lazy" scrolling="no" title="Project Preview"></iframe>
+            <div class="preview-overlay">
+                <span>VIEW</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <div class="contact-label">CONTACT</div>
+        <div class="contact-top">
+            <h2>Have an idea, project, or opportunity in mind? Let’s connect and make it happen.</h2>
+        </div>
+
+        <div class="contact-grid">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" name="name" placeholder="Monika Patel" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Email *</label>
+                    <input type="email" name="email" placeholder="hello@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Message *</label>
+                    <textarea name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    <span class="char-count">0 / 30 minimum characters</span>
+                </div>
+                <button type="submit" class="send-btn">SEND MESSAGE &nbsp; PROCEED →</button>
+            </form>
+
+            <div class="contact-direct">
+                <p class="direct-label">DIRECT CONTACT</p>
+                <div class="email-copy" id="emailCopy">
+                    <span>MONIKASAME26@GMAIL.COM</span>
+                    <span class="copy-hint">CLICK TO COPY EMAIL ADDRESS</span>
+                    <span class="copied-msg" id="copiedMsg">✓ COPIED TO CLIPBOARD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#top" class="footer-logo">MP.</a>
+                <p>Software Developer</p>
+            </div>
+
+            <div class="footer-col">
+                <h5>Menu</h5>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#projects">WORK</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Socials</h5>
+                <a href="https://www.linkedin.com/in/monika-patel-63a700317" target="_blank">LINKEDIN</a>
+                <a href="https://github.com/MonikaPatel-s" target="_blank">GITHUB</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Local Time</h5>
+                <span id="localTime">Loading...</span>
+                <p class="footer-copy">© 2026 Monika Patel</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
